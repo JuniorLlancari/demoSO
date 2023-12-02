@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información del Navegador</title>
+</head>
+<body>
+
+<h1>Información del Navegador</h1>
+
+<script>
+    // Obtener la información del navegador
+    var platformInfo = navigator.platform;
+    var userAgentInfo = navigator.userAgent;
+
+    // Crear elementos para mostrar la información en la página
+    var platformElement = document.createElement('p');
+    platformElement.textContent = 'Plataforma: ' + platformInfo;
+
+    var userAgentElement = document.createElement('p');
+    userAgentElement.textContent = 'User Agent: ' + userAgentInfo;
+
+    // Agregar los elementos al cuerpo del documento
+    document.body.appendChild(platformElement);
+    document.body.appendChild(userAgentElement);
+</script>
+
+</body>
+</html>
